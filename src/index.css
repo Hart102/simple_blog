@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    color: #5E0000;
+    background: #fff;
+    /* background: url("../src/assets/images/banner.png"); */
+}
