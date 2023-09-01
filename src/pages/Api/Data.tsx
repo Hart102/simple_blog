@@ -10,8 +10,6 @@ import Img8 from "@/public/latest/img5.png"
 import Img9 from "@/public/latest/img4.png"
 import Img10 from "@/public/latest/img6.png"
 
-
-
 let posts: { 
     id: number;
     title: string,
