@@ -1,4 +1,3 @@
-import React from 'react'
 import Img from "@/assets/images/author/author1.jpg"
 
 // interface authorInterface {
@@ -7,7 +6,7 @@ import Img from "@/assets/images/author/author1.jpg"
 //   position: string
 // }
 
-const Author: React.FC = () => {
+const Author = () => {
   return (
     <div className='flex gap-3'>
       <img src={Img} alt={Img} className='w-10 h-10 rounded-full' />
