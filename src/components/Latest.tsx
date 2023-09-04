@@ -13,7 +13,7 @@ const Latest: React.FC = () => {
     return (
         <section className='w-full py-10'>
             <Title title="Latest Posts" />
-            <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-20">
 
                 {Data[1].map((post, index) => (
                     <NewsCard key={index} data={post} gridCols='md:grid-cols-1' titleSize='text-1xl' className='w-100 h-64'/>
