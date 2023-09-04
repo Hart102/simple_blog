@@ -1,13 +1,22 @@
 import React from 'react'
 import Author from './_child/Author'
 import Img from "@/assets/images/img2.jpg"
+import Related from '@/components/_child/Related'
+
 
 const RelatedPosts: React.FC = () => {
     return (
         <section className='grid lg:grid-cols-2 gap-10 text-sm py-20'>
             <div className='flex flex-col gap-5'>
                 <p className='font-bold text-2xl mb-10'>Business</p>
-                <div className="flex gap-10">
+
+                <Related
+                    img={Img}
+                    category={"Business travel"}
+                    published={'Jun 2, 2023'}
+                    title={'Your most unhappy customers are your greatest source of learning'}
+                />
+                {/* <div className="flex gap-10">
                     <article>
                         <img src={Img} alt={Img} className='w-60 h-32 rounded' />
                     </article>
@@ -57,7 +66,7 @@ const RelatedPosts: React.FC = () => {
                         </p>
                         <Author />
                     </div>
-                </div>
+                </div> */}
             </div>
 
 
