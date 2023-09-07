@@ -23,13 +23,18 @@ const NewsCard: React.FC<newsCardIntrerface> = ({ gridCols, className, titleSize
         grid
         gap-10
         cursor-pointer
-        ${gridCols}`
-        }>
+        ${gridCols}
+        `}>
             <img
                 src={data ? data.img : ""}
                 alt={data ? data.img : ""}
                 className={`${className}
                 rounded
+                scale-100
+                hover:scale-105
+                transition
+                delay-300
+                duration-700
             `} />
 
             <div className='
@@ -45,7 +50,7 @@ const NewsCard: React.FC<newsCardIntrerface> = ({ gridCols, className, titleSize
                         - {data ? data.published : ""}
                     </p>
                 </div>
-                <p className={`font-bold capitalize ${titleSize}`}>
+                <p className={`font-bold capitalize hover:text-orange-600 ${titleSize}`}>
                     {data ? data.title : ""}
                 </p>
                 <p className='text-gray-500 my-4 line-clamp-3'>
