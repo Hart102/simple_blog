@@ -1,10 +1,9 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
-import Title from '@/components/_child/Title'
-import { Data } from '@/pages/Api/Data';
 import Error from '@/components/_child/Error';
 import Trend from '@/components/_child/Trend';
+import { Data } from '@/pages/Api/Data';
 
 const Trending = () => {
 
@@ -13,22 +12,20 @@ const Trending = () => {
   return (
     <div className='
     w-full
-    pt-24
-    px-4
+    pt-
     md:px-0
-    lg:h-screen
+    lg:h-[60vh]
     '>
       <div className="
-        container
-        mx-auto
-        ">
-        <Title title='Trending' />
-
+      w-full
+      h-full
+      mx-auto
+      ">
         <Swiper //Swiper configuration
           spaceBetween={30}
           centeredSlides={true}
           autoplay={{
-            delay: 2500,
+            delay: 5000,
             disableOnInteraction: false,
           }}
           modules={[Autoplay]}
