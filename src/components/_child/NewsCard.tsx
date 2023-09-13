@@ -34,26 +34,25 @@ const NewsCard: React.FC<newsCardIntrerface> = ({ gridCols, className, titleSize
                 hover:scale-105
                 transition
                 delay-300
-                duration-700
+                duration-500
             `} />
 
             <div className='
             text-sm
-            font-light
             flex
             flex-col
             justify-center
             '>
                 <div className='flex'>
                     <p className='text-orange-600'>{data ? data.category : ""}</p>
-                    <p className='text-gray-500 hover:text-gray-800'>
+                    <p className='text-gray-500'>
                         - {data ? data.published : ""}
                     </p>
                 </div>
                 <p className={`font-bold capitalize hover:text-orange-600 ${titleSize}`}>
                     {data ? data.title : ""}
                 </p>
-                <p className='text-gray-500 my-4 line-clamp-3'>
+                <p className='text-gray-500 my-4 line-clamp-2'>
                     {data ? data.description : ""}
                 </p>
 

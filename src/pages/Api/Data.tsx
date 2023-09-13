@@ -10,6 +10,13 @@ import Img8 from "@/public/latest/img5.png"
 import Img9 from "@/public/latest/img4.png"
 import Img10 from "@/public/latest/img6.png"
 
+import Img12 from "@/public/related/img1.jpg"
+import Img13 from "@/public/related/img2.jpg"
+import Img14 from "@/public/related/img3.jpg"
+import Img15 from "@/public/related/img2.jpg"
+import Img16 from "@/public/related/img5.png"
+
+
 let posts: { 
     id: number;
     title: string,
@@ -304,7 +311,7 @@ posts = [
             title: "Your most unhappy customers are your greatest source of learning",
             subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
             category: "Business, Travel",
-            img : "/images/articles/img1.jpg",
+            img : Img12,
             description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
@@ -321,7 +328,7 @@ posts = [
             title: "Your most unhappy customers are your greatest source of learning",
             subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
             category: "Business, Travel",
-            img : "/images/articles/img2.jpg",
+            img : Img13,
             description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
@@ -338,7 +345,7 @@ posts = [
             title: "Your most unhappy customers are your greatest source of learning",
             subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
             category: "Business, Travel",
-            img : "/images/articles/img3.jpg",
+            img : Img14,
             description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
@@ -355,7 +362,7 @@ posts = [
             title: "Your most unhappy customers are your greatest source of learning",
             subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
             category: "Business, Travel",
-            img : "/images/articles/img4.png",
+            img : Img15,
             description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.
@@ -372,7 +379,7 @@ posts = [
             title: "Your most unhappy customers are your greatest source of learning",
             subtitle: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
             category: "Business, Travel",
-            img : "/images/articles/img5.png",
+            img : Img16,
             description: `
             Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic
             far World of Grammar.

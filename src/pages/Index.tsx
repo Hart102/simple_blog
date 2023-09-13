@@ -8,11 +8,9 @@ const Index = () => {
   return (
     <>
       <Trending />
-      <div className="container px-4 md:px-0 mx-auto">
-        <Latest />
-        <MostPopular />
-        <RelatedPosts />
-      </div>
+      <Latest />
+      <MostPopular />
+      <RelatedPosts />
     </>
   )
 }
