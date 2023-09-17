@@ -4,11 +4,11 @@ import 'swiper/css';
 import Title from "@/components/_child/Title"
 import NewsCard from "@/components/_child/NewsCard"
 import { Data } from '@/pages/Api/Data';
-import MainLayout from '@/pages/Layout/MainLayout';
+import MainLayout from '@/pages/Layout/Container';
 
 const MostPopular = () => {
   return (
-    <div className='w-full py-10 bg-gray-100'>
+    <div className='w-full py-10'>
       <MainLayout>
         <Title title='Most Popular' />
         <Swiper
@@ -17,7 +17,7 @@ const MostPopular = () => {
           breakpoints={{
             640 : {
               slidesPerView: 2,
-              spaceBetween: 30
+              spaceBetween: 60
             }
           }}
           

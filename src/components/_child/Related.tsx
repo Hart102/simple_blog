@@ -7,8 +7,7 @@ const Related = ({ data }: PostType) => {
         flex
         p-2
         gap-10
-        bg-white
-        shadow-lg
+        shadow
         rounded
         cursor-pointer
         hover:bg-gray-100

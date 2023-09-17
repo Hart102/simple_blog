@@ -2,7 +2,7 @@ import Title from "@/components/_child/Title"
 import NewsCard from "@/components/_child/NewsCard"
 import { Data } from '@/pages/Api/Data';
 import Error from './_child/Error';
-import MainLayout from "@/pages/Layout/MainLayout";
+import MainLayout from "@/pages/Layout/Container";
 
 const Latest = () => {
 

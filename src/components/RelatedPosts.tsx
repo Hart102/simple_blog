@@ -1,7 +1,7 @@
 import React from 'react'
 import Related from '@/components/_child/Related'
 import Title from '@/components/_child/Title'
-import MainLayout from '@/pages/Layout/MainLayout'
+import MainLayout from '@/pages/Layout/Container'
 import { Data } from '@/pages/Api/Data'
 
 
@@ -13,8 +13,7 @@ const RelatedPosts: React.FC = () => {
                 <div className='
                 flex
                 flex-col
-                gap-10
-                bg-white
+                gap-5
                 cursor-pointer
                 '>
                     <Title title='Business'/>
@@ -27,8 +26,7 @@ const RelatedPosts: React.FC = () => {
                 <div className="
                 flex
                 flex-col
-                gap-10
-                bg-white
+                gap-5
                 cursor-pointer
                 ">
                     <Title title='Travel'/>
