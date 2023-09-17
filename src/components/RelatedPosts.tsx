@@ -40,3 +40,4 @@ const RelatedPosts: React.FC = () => {
 }
 
 export default RelatedPosts
+
