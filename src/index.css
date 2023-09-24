@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body{
-    color: #5E0000;
+    /* color: #5E0000; */
     background: #fff;
     /* background: url("../src/assets/images/banner.png"); */
 }

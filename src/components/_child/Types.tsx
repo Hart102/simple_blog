@@ -4,7 +4,8 @@ export interface childInterface {
     | JSX.Element
     | React.ReactElement
     | React.ReactElement[]
-    | string
+    | string;
+    title?: string
 }
 
 export interface PostType {

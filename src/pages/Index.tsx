@@ -2,7 +2,7 @@ import Trending from "@/components/Trending"
 import Latest from "@/components/Latest"
 import MostPopular from "@/components/MostPopular"
 import RelatedPosts from "@/components/RelatedPosts"
-import Footer from "@/components/Footer"
+import Footer from "@/components/Footer/Footer"
 
 
 const Index = () => {

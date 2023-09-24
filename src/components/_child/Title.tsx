@@ -1,7 +1,7 @@
 import React from 'react'
 
 interface titleInterface {
-    title: string
+    title?: string
 }
 
 const Title: React.FC<titleInterface> = ({ title }) => {

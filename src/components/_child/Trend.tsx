@@ -11,13 +11,14 @@ interface trendInterface {
 
 const Trend = ({ data }: trendInterface) => {
   return (
-    <div className='w-full h-[60vh] relative'>
-      <img
-        src={data.img}
-        alt={data.img}
+    <div className='w-full h-[70vh] relative'>
+      {/* <img
+        src={""}
+        alt={""}
         className='w-full h-[100%]'
-      />
+      /> */}
 
+      {/* OverLay */}
       <div className="
       flex
       absolute
@@ -26,8 +27,8 @@ const Trend = ({ data }: trendInterface) => {
       w-full
       h-full
       p-4
-      bg-rgba
-      text-white
+      bg-rgba1
+      text-white1
       cursor-pointer
       lg:p-5
       ">
@@ -37,9 +38,10 @@ const Trend = ({ data }: trendInterface) => {
         flex
         flex-col
         justify-center
+        text-center
         ">
           <div className='flex'>
-            <p className="text-orange-200">{data.category}</p>
+            <p className="text-orange-2001">{data.category}</p>
             <p> - {data.published}</p>
           </div>
 
@@ -50,14 +52,15 @@ const Trend = ({ data }: trendInterface) => {
           capitalize
           line-clamp-3
           my-5
-          text-white
+          text-white1
           '>{data.title}</p>
 
           <p className='
           my-4
           line-clamp-3
-          text-orange-50
-          lg:max-w-[80%]
+          text-orange-501
+          lg:max-w-[80%]1
+          text-center
         '>{data.description}</p>
         </div>
       </div>
