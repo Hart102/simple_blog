@@ -9,7 +9,7 @@ const Latest = () => {
     if(!Data) return <Error />
 
     return (
-        <section className='w-full py-20'>
+        <section className='w-full lg:py-20'>
             <MainLayout>
                 <Title title="Latest Posts" />
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">

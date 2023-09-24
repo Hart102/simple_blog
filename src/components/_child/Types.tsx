@@ -17,3 +17,11 @@ export interface PostType {
         published?: string
     }
 }
+
+export interface ViewPostInterface {
+    data: {
+        title: string;
+        img?: string;
+        description: string
+    }
+}

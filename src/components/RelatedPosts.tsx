@@ -1,17 +1,17 @@
-import Related from '@/components/_child/Related'
-import Title from '@/components/_child/Title'
+import Related, { SectionContainer } from '@/components/_child/Related'
+// import Title from '@/components/_child/Title'
 import MainLayout from '@/pages/Layout/Container'
 import { Data } from '@/pages/Api/Data'
-import { childInterface } from './_child/Types'
+// import { childInterface } from './_child/Types'
 
-const SectionContainer = ({ children, title }: childInterface) => {
-    return (
-        <section className='flex flex-col gap-5 cursor-pointer'>
-            <Title title={title} />
-            {children}
-        </section>
-    )
-}
+// const SectionContainer = ({ children, title }: childInterface) => {
+//     return (
+//         <section className='flex flex-col gap-5 cursor-pointer'>
+//             <Title title={title} />
+//             {children}
+//         </section>
+//     )
+// }
 
 const RelatedPosts = () => {
     return (

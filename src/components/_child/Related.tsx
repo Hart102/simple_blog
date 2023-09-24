@@ -1,5 +1,17 @@
 import Author from '@/components/_child/Author'
 import { PostType } from './Types';
+import Title from './Title';
+import { childInterface } from './Types';
+
+export const SectionContainer = ({ children, title }: childInterface) => {
+    return (
+        <section className='flex flex-col gap-5 cursor-pointer'>
+            <Title title={title} />
+            {children}
+        </section>
+    )
+}
+
 
 const Related = ({ data }: PostType) => {
     return (

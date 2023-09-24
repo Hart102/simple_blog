@@ -11,9 +11,9 @@ interface trendInterface {
 
 const Trend = ({ data }: trendInterface) => {
   return (
-    <div className='w-full h-[70vh] relative'>
+    <div className='container mx-auto h-[60vh] relative lg:my-14'>
       {/* <img
-        src={""}
+        src={data.img}
         alt={""}
         className='w-full h-[100%]'
       /> */}
@@ -26,7 +26,7 @@ const Trend = ({ data }: trendInterface) => {
       left-0
       w-full
       h-full
-      p-4
+      p-1
       bg-rgba1
       text-white1
       cursor-pointer
@@ -40,7 +40,7 @@ const Trend = ({ data }: trendInterface) => {
         justify-center
         text-center
         ">
-          <div className='flex'>
+          <div className='flex mx-auto lg:mx-0'>
             <p className="text-orange-2001">{data.category}</p>
             <p> - {data.published}</p>
           </div>
@@ -48,7 +48,7 @@ const Trend = ({ data }: trendInterface) => {
           <p className='
           font-bold
           text-3xl
-          lg:text-6xl
+          lg:text-5xl
           capitalize
           line-clamp-3
           my-5
@@ -58,9 +58,10 @@ const Trend = ({ data }: trendInterface) => {
           <p className='
           my-4
           line-clamp-3
-          text-orange-501
-          lg:max-w-[80%]1
           text-center
+          mx-auto
+          font-light
+          lg:max-w-[80%]
         '>{data.description}</p>
         </div>
       </div>

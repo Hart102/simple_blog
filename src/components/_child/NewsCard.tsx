@@ -44,15 +44,15 @@ const NewsCard: React.FC<newsCardIntrerface> = ({ gridCols, className, titleSize
             justify-center
             '>
                 <div className='flex'>
-                    <p className='text-orange-600'>{data ? data.category : ""}</p>
+                    <p className='text-red-600'>{data ? data.category : ""}</p>
                     <p className='text-gray-500'>
                         - {data ? data.published : ""}
                     </p>
                 </div>
-                <p className={`font-bold capitalize hover:text-orange-600 ${titleSize}`}>
+                <p className={`font-bold capitalize hover:text-red-600 ${titleSize}`}>
                     {data ? data.title : ""}
                 </p>
-                <p className='text-gray-500 my-4 line-clamp-2'>
+                <p className='font-light my-4 line-clamp-2'>
                     {data ? data.description : ""}
                 </p>
 

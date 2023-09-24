@@ -3,11 +3,13 @@ import Latest from "@/components/Latest"
 import MostPopular from "@/components/MostPopular"
 import RelatedPosts from "@/components/RelatedPosts"
 import Footer from "@/components/Footer/Footer"
+import Navbar from "@/components/Navbar"
 
 
 const Index = () => {
   return (
     <section className=" bg-yellow-50">
+      <Navbar />
       <Trending />
       <Latest />
       <MostPopular />
