@@ -1,13 +1,15 @@
 import { childInterface } from "@/components/_child/Types"
-// import Navbar from "@/components/Navbar"
-// import Footer from "@/components/Footer/Footer"
+import Navbar from "@/components/Navbar"
+import Footer from "@/components/Footer/Footer"
+import { Outlet } from "react-router-dom"
 
 const MainLayout = ({ children }: childInterface) => {
   return (
     <>
-      {/* <Navbar /> */}
+      <Navbar />
       {children}
-      {/* <Footer /> */}
+      <Outlet />
+      <Footer />
     </>
   )
 }

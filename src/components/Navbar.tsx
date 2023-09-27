@@ -1,16 +1,6 @@
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/20/solid";
 import React, { useRef } from "react";
-
-
-
-// let anchorTags: { href: string; label: string }[] = [];
-
-// anchorTags = [
-//     { href: "home", label: "Home" },
-//     { href: "about", label: "About" },
-//     { href: "blog", label: "Blog" },
-// ]
-
+import { Link } from "react-scroll";
 
 
 const Navbar = () => {
@@ -33,38 +23,19 @@ const Navbar = () => {
 
     return (
 
-        <header className="
-        fixed
-        w-[100%]
-        z-10
-        bg-yellow-50
-        ">
+        <header className="fixed top-0 w-[100%] z-10 bg-yellow-50 cursor-pointer">
             {/* Desktop Menu */}
-            <div className="
-            py-5
-            hidden
-            container
-            mx-auto
-            uppercase
-            text-sm
-            flex-col
-            justify-between
-            lg:flex-row
-            lg:flex
-            ">
+            <div className="py-5 hidden container mx-auto uppercase text-sm flex-col justify-between lg:flex-row lg:flex">
                 <div className="lg:flex gap-20">
-                    <p>Trending</p>
-                    <p>Latest</p>
+                    <Link to="trending">Trending</Link>
+                    <Link to="latest" spy={true} smooth={true} offset={-70} duration={500}>latest</Link>
                 </div>
-
-                <p className="font-bold">Blog</p>
-
-                <div className="lg:flex gap-20">
-                    <p>Most Popular</p>
-                    <p>Related Post</p>
+                <a href="/" className="font-bold">Blog</a>
+                <div className="lg:flex gap-20"> 
+                    <Link to="popular" spy={true} smooth={true} offset={-70} duration={500}>Most Popular</Link> 
+                    <Link to="#">Related Post</Link> 
                 </div>
             </div>
-
             {/* Mobile */}
             <nav className="px-3 py-2 relative block lg:hidden">
                 <div className="flex justify-between items-center w-full">
@@ -73,98 +44,20 @@ const Navbar = () => {
                         {toggle ? <XMarkIcon className="w-10" /> : <Bars3Icon className="w-10" />}
                     </span>
                 </div>
-                {/* changeHamburgar */}
-
-                <div className="
-                hidden
-                flex-col
-                gap-8
-                absolute
-                w-[100%]
-                h-[100vh]
-                left-0
-                top-14
-                text-center
-                py-20
-                bg-yellow-50
-                border-t"
-                    ref={navRef}>
-                    <p>Trending</p>
-                    <p>Latest</p>
-                    <p>Most Popular</p>
-                    <p>Related Post</p>
+                <div className="hidden flex-col gap-8 absolute w-[100%] h-[100vh] left-0 top-14 
+                text-center py-20 bg-yellow-50 border-t" ref={navRef}>
+                    <Link to="trending" spy={true} smooth={true} offset={-70} duration={500}>Trending</Link>
+                    <Link to="latest" spy={true} smooth={true} offset={-70} duration={500}>latest</Link>
+                    <Link to="popular" spy={true} smooth={true} offset={-70} duration={500}>Popular</Link>
                 </div>
             </nav>
         </header>
-
-
-
-
-
-        // <header className="fixed w-[100%] right-0 bg-gray-1001 z-10">
-        //     <nav>
-        //         <div className="
-        //         container 
-        //         mx-auto
-        //         flex
-        //         flex-col-reverse
-        //         lg:flex-row
-        //         justify-between
-        //         p-3
-        //         gap-5
-        //         ">
-        //             <p className="
-        //             hidden
-        //             lg:block
-        //             font-bold">Blog</p>
-        //             <div>
-        //                 <input
-        //                     type="text"
-        //                     placeholder="Search..."
-        //                     className="
-        //                 rounded-full
-        //                 border
-        //                 border-slate-300
-        //                 px-3
-        //                 py-2
-        //                 text-sm
-        //                 w-full
-        //                 lg:w-96
-        //                 placeholder-slate-500
-        //                 focus:border-sky-500
-        //                 focus:ring-sky-500
-        //                 focus:ring-1
-        //                 focus:outline-none
-        //                 "/>
-        //             </div>
-
-        //             <div className="flex justify-between">
-        //                 <p className="
-        //                 block 
-        //                 lg:hidden
-        //                 font-bold">Blog</p>
-
-        //                 <div className="
-        //                 flex
-        //                 font-light
-        //                 gap-8
-        //                 ">
-        //                     <p>Home</p>
-        //                     <p>About</p>
-        //                     <p>Blog</p>
-        //                 </div>
-        //             </div>
-
-        //         </div>
-        //     </nav>
-        // </header>
     )
 }
 
 export default Navbar
 
 // bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600
-
 
 
 // rotate animation

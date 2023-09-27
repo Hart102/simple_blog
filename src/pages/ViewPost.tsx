@@ -1,18 +1,20 @@
+import { useState } from "react"
+import { useLocation } from "react-router-dom"
 import Container from "@/pages/Layout/Container"
-import PostViewer from "@/components/_child/PostViewer"
-import Related, { SectionContainer } from "@/components/_child/Related"
-import { Data } from "./Api/Data"
 
 const ViewPost = () => {
+  const location = useLocation();
+  const [post] = useState(location.state)
 
   return (
     <Container>
-      <PostViewer data={""}/>
-      <div className="lg:px-20 mx-auto">
-        <SectionContainer title='Business'>
-          {Data[2].map((post, index) => <Related key={index} data={post} />)}
-        </SectionContainer>
-      </div>
+      <section className="py-28">
+        <p className="font-bold text-3xl lg:text-5xl text-center">{post.title}</p>
+        <div className="w-[90%] lg:w-[70%] mx-auto my-14">
+          <img src={post.urlToImage} alt={post.urlToImage} className='w-full h-[100%]' />
+        </div>
+        <p className="my-4 text-justify mx-auto font-light border-b pb-10 lg:max-w-[70%]">{post.description}</p>
+      </section>
     </Container>
   )
 }
