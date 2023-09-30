@@ -1,11 +1,5 @@
 import Img from "@/assets/images/author/author1.jpg"
 
-// interface authorInterface {
-//   image: string;
-//   name: string;
-//   position: string
-// }
-
 const Author = () => {
   return (
     <div className='flex gap-3'>

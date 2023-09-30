@@ -1,6 +1,6 @@
 import { childInterface } from "@/components/_child/Types"
 import Navbar from "@/components/Navbar"
-import Footer from "@/components/Footer/Footer"
+import Footer from "@/components/Footer"
 import { Outlet } from "react-router-dom"
 
 const MainLayout = ({ children }: childInterface) => {
