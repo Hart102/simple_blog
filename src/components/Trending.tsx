@@ -25,7 +25,7 @@ const Trending = () => {
   if (loading) return <div className='h-[60vh] flex items-center'><Loader /></div> 
 
   return (
-    <div className='w-full pt- md:px-0 lg:h-[60vh] mt-8 mb-20' id='trending' title='section 1'>
+    <div className='w-full pt- md:px-0 lg:h-[60vh] mt-8 mb-20' id='trending'>
       <div className="w-full h-full mx-auto">
         <Swiper //Swiper configuration
           spaceBetween={30}
