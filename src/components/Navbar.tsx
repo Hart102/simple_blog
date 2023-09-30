@@ -25,7 +25,7 @@ const Navbar = () => {
 
         <header className="fixed top-0 w-[100%] z-10 bg-yellow-50 cursor-pointer">
             {/* Desktop Menu */}
-            <div className="py-5 hidden container mx-auto uppercase text-sm flex-col justify-between lg:flex-row lg:flex">
+            <div className="py-5 hidden container mx-auto uppercase text-sm flex-col justify-between border-b-red-700 border-b-2 lg:flex-row lg:flex">
                 <div className="lg:flex gap-20">
                     <Link to="trending">Trending</Link>
                     <Link to="latest" spy={true} smooth={true} offset={-70} duration={500}>latest</Link>
@@ -45,10 +45,10 @@ const Navbar = () => {
                     </span>
                 </div>
                 <div className="hidden flex-col gap-8 absolute w-[100%] h-[100vh] left-0 top-14 
-                text-center py-20 bg-yellow-50 border-t" ref={navRef}>
-                    <Link to="trending" spy={true} smooth={true} offset={-70} duration={500}>Trending</Link>
-                    <Link to="latest" spy={true} smooth={true} offset={-70} duration={500}>latest</Link>
-                    <Link to="popular" spy={true} smooth={true} offset={-70} duration={500}>Popular</Link>
+                text-center py-20 bg-yellow-50 border-t-red-700 border-t-2" ref={navRef}>
+                    <Link to="trending" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleAction}>Trending</Link>
+                    <Link to="latest" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleAction}>latest</Link>
+                    <Link to="popular" spy={true} smooth={true} offset={-70} duration={500} onClick={toggleAction}>Most Popular</Link>
                 </div>
             </nav>
         </header>
@@ -56,12 +56,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
-// bg-gradient-to-r from-purple-600 via-pink-600 to-blue-600
-
-
-// rotate animation
-// animate-spin h-10 h-10 m-auto" viewBox="0 0 24 24"
-
-// Bounce animation 
-// animate-bounce m-auto bg-blue text-center

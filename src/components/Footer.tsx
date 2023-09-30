@@ -2,7 +2,7 @@ import Title from "@/components/_child/Title"
 
 const Footer = () => {
     return (
-        <section className="w-full bg-yellow-1001 shadow bg-white">
+        <section className="w-100 bg-yellow-1001 shadow bg-white">
             <div className="text-sm border-t bg-gray-700 text-neutral-400">
                 <div className="container mx-auto pb-3">
                     <div className="grid grid-cols-1 gap-10 p-6 align-center lg:px-0 lg:gap-20 lg:grid-cols-3">

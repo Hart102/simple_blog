@@ -26,7 +26,7 @@ const Trending = () => {
 
   return (
     <div className='w-full pt- md:px-0 lg:h-[60vh] mt-8 mb-20' id='trending'>
-      <div className="w-full h-full mx-auto">
+      <div className="container h-full mx-auto px-2 lg:px-0">
         <Swiper //Swiper configuration
           spaceBetween={30}
           centeredSlides={true}

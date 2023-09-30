@@ -17,8 +17,8 @@ export interface PostType {
         publishedAt: string;
         source: { id: string, name: string }
         title: string;
-        url: string;
-        urlToImage: string;
+        url?: string;
+        urlToImage?: string;
     }
 }
 
